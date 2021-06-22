@@ -1,0 +1,20 @@
+.feature {
+    padding-top: 94px;
+    
+}
+.feature__list {
+    
+    display: flex;
+    justify-content: space-between;
+    & .feature__items {
+   
+   
+        flex-basis: calc((100% - 90px) / 4);
+    
+    & .feature__items:not(:last-child) {
+        margin-right: 30px;
+        
+        }
+}
+
+}

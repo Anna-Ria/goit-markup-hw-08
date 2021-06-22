@@ -1,0 +1,52 @@
+// utils
+@import "./utils/variables";
+
+// base
+@import "./base/common";
+@import "./base/container";
+
+// components
+@import "./components/button";
+
+@import "./components/logo";
+
+@import "./components/suptitle";
+
+@import "./components/feature.icons";
+
+@import "./components/title";
+
+@import "./components/description";
+
+@import "./components/social.icons";
+
+@import "./components/clients.icons";
+
+@import "./components/filters.button.scss";
+
+@import "./components/labels";
+
+@import "./components/backdrop";
+
+@import "./components/modal-window";
+
+@import "./components/modal-style";
+
+// layout
+@import "./layout/header";
+
+@import "./layout/hero";
+
+@import "./layout/feature";
+
+@import "./layout/work";
+
+@import "./layout/team";
+
+@import "./layout/clients";
+
+@import "./layout/footer";
+
+@import "./layout/portfolio";
+
+
