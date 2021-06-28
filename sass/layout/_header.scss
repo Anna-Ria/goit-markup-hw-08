@@ -1,50 +1,65 @@
 
-.navigation__list {
-    display: none;
-}
-.contacts__list {
-    display: none;
-}
-
-
-.header {
-    .header-container {
-        display: flex;
-        align-items: center;
-    
+@media screen and (max-width: 768px) {
+    .navigation__list {
+        display: none;
     }
-    
-   &__menu-mob {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-} 
-&__burger-icon {
-    fill: #000000;
+    .contacts__list {
+        display: none;
+    }
+    .header {
+        
+       &__menu-mob {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    } 
+    &__burger-icon {
+        fill: #000000;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    }
 }
-&__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-}
+
 
 @media screen and (min-width: 768px) {
     .header {
-        padding: 0;
-        &____menu-mob {
+        
+        &__menu-mob {
             display: none;
         }
+        
+        .logo {
+            margin-right: 88px;
+        }
+         
     }
+   
 }
-  
-.navigation__list {
+.header-container {
     display: flex;
     align-items: center;
+
 }
-.logo {
-    margin-right: 88px;
+.mobile-menu {
+    display: none;
 }
+
+ .navigation {  
+    display: flex;
+    align-items: center;
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    
+ }
+
+  
+
 
 
 @media screen and (min-width: 1200px) {
