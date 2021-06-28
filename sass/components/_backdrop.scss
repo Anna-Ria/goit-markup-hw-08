@@ -1,17 +1,17 @@
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color:rgba(47, 48, 58, 0.8);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 100;
-    transition: opacity 250ms linear, visibility 250ms linear;
-    }
+// .backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color:rgba(47, 48, 58, 0.8);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//     z-index: 100;
+//     transition: opacity 250ms linear, visibility 250ms linear;
+//     }
 
-    .is-hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
+//     .is-hidden {
+//         opacity: 0;
+//         visibility: hidden;
+//         pointer-events: none;
+//     }

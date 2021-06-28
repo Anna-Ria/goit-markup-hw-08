@@ -1,9 +1,23 @@
-.feature__svg {
+ .feature__svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
-    height: 120px;
-    background-color: var(--secondary-background);
-margin-bottom: 30px;
+     max-width: 450px;
+     height: 120px;
+     background-color: var(--secondary-background);
+     margin-bottom: 30px;
+     margin-top: 30px;
+ }
+
+ @media screen and (min-width: 768px) {
+    .feature__svg {
+        max-width: 354px;
+     height: 120px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .feature__svg {
+        max-width: 270px;
+     height: 120px;
+    }
 }

@@ -21,30 +21,65 @@
              <!-- шапка -->
 
              <header class="header">
-              <div class="container header-container">
+              <div class="container header__container">
                 <nav class="navigation">
                   <a href="./index.html" class="logo text">
                      <span class="span-logo">Web</span>Studio
                   </a>
                   <ul class="navigation__list">
-                     <li class="navigation__item"><a href="" class="navigation__link active">Студия</a></li>
+                     <li class="navigation__item"><a href="./index.html" class="navigation__link active">Студия</a></li>
                      <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
                      <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
                   </ul>
                  </nav>
      <ul class="contacts__list">
          <li class="contacts__item"><a href="mailto:info@devstudio.com"  class="contacts__link">
-            <svg class="contacts__icon">
+            <svg class="contacts__icon" width="16" height="12">
                 <use href="./image/sprite.svg#icon-envelope"></use>
             </svg>info@devstudio.com </a>
         </li>
          <li class="contacts__item"><a href="tel:+380961111111"  class="contacts__link">
-            <svg class="phone__icon">
+            <svg class="phone__icon" width="10" height="16">
                 <use href="./image/sprite.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a></li>
      </ul>
-    </div>
     
+     <button type="button" class="header__menu-mob" data-menu-button>
+<svg class="header__burger-icon" width="40" height="40">
+  <use href="./image/sprite.svg#icon-menu"></use>
+</svg>
+     </button>
+    
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container"> 
+        <button type="button" class="mobile-menu__clous-btn" data-menu-close>
+          <svg class="close-icon" width="40" height="40">
+            <use href="./image/sprite.svg#icon-close">
+            </use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Студия</a</li>
+          <li class="mobile__menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+          <li class="mobile__menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+        </ul>
+        <ul class="mobile-contacts__list">
+          <li class="mobile-contacts__item"><a href="tel:+380961111111"  class="mobaile-contacts__link">+380961111111</a></li>
+          <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com"  class="email-contacts__link">info@devstudio.com </a></li>
+        </ul>
+        <ul class="mobile-social__list">
+   <li class="mobile-social__item">
+            <a class="mobile-social__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a></li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a></li>
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+       </ul>
+        </div>
+      </div>
+    </div>
  </header> 
            <!-- герой -->
  <main>
@@ -153,35 +188,42 @@
     <h2 class="title">Наша команда</h2>
     <ul class="team__list">
         <li class="team__item">
-            <img src="./image/img4.jpg" alt="" width="270"/>
+            <picture>
+              <source srcset="./image/img4.jpg 1x, ./image/img(4)2xdes.jpg 2x" media="(min-width: 1200px)" >
+              <source srcset="./image/img(4)1xtab.jpg 1x, ./image/img(4)2xtab.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./image/img(4)1xmob.jpg 1x, ./image/img(4)2xmob.jpg 2x" media="(max
+              -width: 767px)">
+
+              <img src="./image/img4.jpg" alt="">
+            </picture>
             <div class="employee">
             <h3 class="member-title">Игорь Демьяненко</h3>
             <p>Product Designer</p>
             <ul class="social-list">
               <li class="social-list-item">
                 <a href="" class="social-list-link">
-                <svg class="social-list-icon">
+                <svg class="social-list-icon" width="20" height="20" >
                   <use href="./image/sprite.svg#icon-instagram"></use>
                 </svg>
             </a>
               </li>
               <li class="social-list-item">
                 <a href="" class="social-list-link">
-                <svg class="social-list-icon">
+                <svg class="social-list-icon" width="20" height="20">
                   <use href="./image/sprite.svg#icon-twitter"></use>
                 </svg>
             </a>
               </li>
               <li class="social-list-item">
                 <a href="" class="social-list-link">
-                <svg class="social-list-icon">
+                <svg class="social-list-icon" width="20" height="20">
                   <use href="./image/sprite.svg#icon-facebook"></use>
                 </svg>
             </a>
               </li>
               <li class="social-list-item">
                 <a href="" class="social-list-link">
-                <svg class="social-list-icon">
+                <svg class="social-list-icon" width="20" height="20">
                   <use href="./image/sprite.svg#icon-linkedin"></use>
                 </svg>
             </a>
@@ -192,35 +234,40 @@
         </li>
         
         <li class="team__item">
-            <img src="./image/img5.jpg" alt="" width="270"/>
+          <picture>
+            <source srcset="./image/img5.jpg 1x, ./image/img(5)2xdes.jpg 2x" media="(min-width: 1200px)" >
+            <source srcset="./image/img(5)1xtab.jpg 1x, ./image/img(5)2xtab.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./image/img(5)1xmob.jpg 1x, ./image/img(5)2xmob.jpg 2x" media="(min-width: 767px)">
+            <img src="./image/img5.jpg" alt="">
+          </picture>
             <div class="employee">
         <h3 class="member-title">Ольга Репина</h3>
         <p>Frontend Developer</p>
         <ul class="social-list">
             <li class="social-list-item">
               <a href="" class="social-list-link">
-              <svg class="social-list-icon">
+              <svg class="social-list-icon" width="20" height="20">
                 <use href="./image/sprite.svg#icon-instagram"></use>
               </svg>
           </a>
             </li>
             <li class="social-list-item">
               <a href="" class="social-list-link">
-              <svg class="social-list-icon">
+              <svg class="social-list-icon" width="20" height="20">
                 <use href="./image/sprite.svg#icon-twitter"></use>
               </svg>
           </a>
             </li>
             <li class="social-list-item">
               <a href="" class="social-list-link">
-              <svg class="social-list-icon">
+              <svg class="social-list-icon" width="20" height="20">
                 <use href="./image/sprite.svg#icon-facebook"></use>
               </svg>
           </a>
             </li>
             <li class="social-list-item">
               <a href="" class="social-list-link">
-              <svg class="social-list-icon">
+              <svg class="social-list-icon" width="20" height="20">
                 <use href="./image/sprite.svg#icon-linkedin"></use>
               </svg>
           </a>
@@ -230,36 +277,40 @@
         </div>
     </li>
     <li class="team__item">
-
-            <img src="./image/img6.jpg" alt="" width="270"/>
+      <picture>
+        <source srcset="./image/img6.jpg 1x, ./image/img(6)2xdes.jpg 2x" media="(min-width: 1200px)" >
+        <source srcset="./image/img(6)1xtab.jpg 1x, ./image/img(6)2xtab.jpg 2x" media="(min-width: 768px)">
+        <source srcset="./image/img(6)1xmob.jpg 1x, ./image/img(6)2xmob.jpg 2x" media="(min-width: 767px)">
+            <img src="./image/img6.jpg" alt="">
+            </picture>
             <div class="employee">
             <h3 class="member-title">Николай Тарасов</h3>
             <p>Marketing</p>
             <ul class="social-list">
                 <li class="social-list-item">
                   <a href="" class="social-list-link">
-                  <svg class="social-list-icon">
+                  <svg class="social-list-icon" width="20" height="20">
                     <use href="./image/sprite.svg#icon-instagram"></use>
                   </svg>
               </a>
                 </li>
                 <li class="social-list-item">
                   <a href="" class="social-list-link">
-                  <svg class="social-list-icon">
+                  <svg class="social-list-icon" width="20" height="20">
                     <use href="./image/sprite.svg#icon-twitter"></use>
                   </svg>
               </a>
                 </li>
                 <li class="social-list-item">
                   <a href="" class="social-list-link">
-                  <svg class="social-list-icon">
+                  <svg class="social-list-icon" width="20" height="20">
                     <use href="./image/sprite.svg#icon-facebook"></use>
                   </svg>
               </a>
                 </li>
                 <li class="social-list-item">
                   <a href="" class="social-list-link">
-                  <svg class="social-list-icon">
+                  <svg class="social-list-icon" width="20" height="20">
                     <use href="./image/sprite.svg#icon-linkedin"></use>
                   </svg>
               </a>
@@ -270,35 +321,40 @@
         </li>
         
         <li class="team__item">
-            <img src="./image/img7.jpg" alt="" width="270"/>
+          <picture>
+            <source srcset="./image/img7.jpg 1x, ./image/img(7)2xdes.jpg 2x" media="(min-width: 1200px)" >
+            <source srcset="./image/img(7)1xtab.jpg 1x, ./image/img(7)2xtab.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./image/img(7)1xmob.jpg 1x, ./image/img(7)2xmob.jpg 2x" media="(min-width: 767px)">
+            <img src="./image/img7.jpg" alt="">
+          </picture>
             <div class="employee">
             <h3 class="member-title">Михаил Ермаков</h3>
             <p>UI Designer</p>
             <ul class="social-list">
                 <li class="social-list-item">
                   <a href="" class="social-list-link">
-                  <svg class="social-list-icon">
+                  <svg class="social-list-icon" width="20" height="20">
                     <use href="./image/sprite.svg#icon-instagram"></use>
                   </svg>
               </a>
                 </li>
                 <li class="social-list-item">
                   <a href="" class="social-list-link">
-                  <svg class="social-list-icon">
+                  <svg class="social-list-icon" width="20" height="20">
                     <use href="./image/sprite.svg#icon-twitter"></use>
                   </svg>
               </a>
                 </li>
                 <li class="social-list-item">
                   <a href="" class="social-list-link">
-                  <svg class="social-list-icon">
+                  <svg class="social-list-icon" width="20" height="20">
                     <use href="./image/sprite.svg#icon-facebook"></use>
                   </svg>
               </a>
                 </li>
                 <li class="social-list-item">
                   <a href="" class="social-list-link">
-                  <svg class="social-list-icon">
+                  <svg class="social-list-icon" width="20" height="20">
                     <use href="./image/sprite.svg#icon-linkedin"></use>
                   </svg>
               </a>
@@ -509,6 +565,7 @@
    </div>
 
    <script src="./js/modal.js"></script>
+   <script src="./js/menu.js"></script>
 </body>
 </html>
 
