@@ -21,43 +21,69 @@
  }
  }
 
- @media screen and (min-width: 1200px) {
- .filters-button {
-     margin-bottom: 50px;
-     display: flex;
-     align-items: center;
-      justify-content: center;
- }
-}
+//  @media screen and (min-width: 1200px) {
+//  .filters-button {
+//      margin-bottom: 50px;
+//      display: flex;
+//      align-items: center;
+//       justify-content: center;
+//  }
+// }
 
- .portfolio-button:not(:last-child) {
-      margin-right: 8px;   
-     } 
-
-
-     @media screen and (min-width: 768px) {
-         .filters-button {
-             display: flex;
-            justify-content: center;
-            min-height: unset;
-            margin-bottom: 30px;
-         }
-     }
-
-
-     @media screen and (min-width: 280px) {
-        .filters-button {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        
-    margin-bottom: 40px;
-    margin-left: -8px;
-    margin-top: -15px;
-     }
-     .portfolio-button {
-        margin-left: 8px;
-        margin-top: 15px;
-        
-     }
+.filters-button {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      
+    justify-content: center;
+    margin-bottom: 30px;
     }
+    @media screen and (min-width: 1200px) {
+      margin: 0 0 50px 0;
+    }
+  }
+  
+  .portfolio-button:not(:last-child){
+    margin-right: 8px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      
+    }
+  }
+  
+  
+
+
+//  .portfolio-button:not(:last-child) {
+//       margin-right: 8px;
+
+//      } 
+
+
+//      @media screen and (min-width: 768px) {
+//          .filters-button {
+//              display: flex;
+        
+//             justify-content: center;
+            
+//             margin-bottom: 30px;
+//          }
+//      }
+
+
+//      @media screen and (min-width: 280px) {
+//         .filters-button {
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: flex-start;
+        
+//     margin-bottom: 40px;
+//     margin-left: -8px;
+//     margin-top: -15px;
+//      }
+//      .portfolio-button {
+//         margin-left: 8px;
+//         margin-top: 15px;
+        
+//      }
+//     }
