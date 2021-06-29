@@ -29,9 +29,11 @@
 
 
  .check {
-     display: flex;
-     flex-wrap: wrap;
      
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     letter-spacing: 0.03em;
      cursor: pointer;
      font-size: 12px;
      line-height: 1.17;
