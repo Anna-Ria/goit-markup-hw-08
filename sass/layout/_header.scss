@@ -1,32 +1,30 @@
 
  .header {
     border-bottom: 1px solid #ECECEC;
-
+padding-top: 10px;
+padding-bottom: 10px;
     &__menu-mob {
                  background-color: transparent;
                 border: none;
                  padding: 0;
              } 
-             &__burger-icon {
+           &__burger-icon {
                  fill: #000000;
              }
              &__container {
                 display: flex;
                  justify-content: space-between;
                 align-items: center;
-             }
              
+             }
             
-        
-        
-    
-              
-      @media screen and (max-width: 767px) {
+
+         @media screen and (max-width: 767px) {
        
         padding-top: 10px;
         padding-bottom: 10px;
       }
-        
+     
     
       
       .header__container {
@@ -47,6 +45,7 @@
         @media screen and (min-width: 768px) {
           display: flex;
           margin-left: 88px;
+          margin-right: 84px;
         }
         @media screen and (min-width: 1200px) {
           margin-left: 93px;
@@ -143,7 +142,11 @@
              
            
           }
-     
+     @media screen and (min-width: 768px) {
+       .header__burger-icon {
+         display: none;
+       }
+     }
     
           .contacts__item:not(:first-child) {
             @media screen and (min-width: 768px) {
@@ -409,6 +412,6 @@
 //     } 
     
 
-
+ 
         
     
