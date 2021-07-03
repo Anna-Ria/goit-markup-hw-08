@@ -1334,6 +1334,23 @@ address {
   flex-basis: calc((100% - 90px) / 3);
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .portfolio__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
 .card-description {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
