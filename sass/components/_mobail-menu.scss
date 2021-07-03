@@ -1,7 +1,7 @@
 
  @media screen and (max-width: 767px) {   
 .mobile-menu {
-    
+z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,6 +41,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        
     }
 
    
