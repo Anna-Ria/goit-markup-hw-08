@@ -35,7 +35,13 @@
 
 .footer-social {
     display: block;
-    margin-left: 70px;
+
+}
+@media screen and (min-width: 1200px) {
+    .footer-social {
+        
+        margin-left: 70px; 
+    } 
 }
 
 .footer-social-list {
@@ -51,6 +57,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
     
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white);
