@@ -1313,6 +1313,14 @@ address {
   padding-bottom: 94px;
 }
 
+.section-title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio {
     display: flex;
@@ -1336,13 +1344,6 @@ address {
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
-  }
-  .portfolio .section-title {
-    color: #212121;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
   }
 }
 
