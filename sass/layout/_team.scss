@@ -4,51 +4,50 @@
     background-color: var(--secondary-background);
 } 
 
+@media screen and (max-width: 767px) {
+    .team__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .team__item:not(:last-child) {
+        margin-bottom: 30px; } 
+       
+        
+}
+
+@media screen and (max-width: 1199px) {
+    .team__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+        .team__item:nth-child(-n +2) {
+         margin-bottom: 30px; } 
+        
+         
+   
+    }
+
 @media screen and (min-width: 1200px){
     .team {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-}
-
-@media screen and (min-width: 768px) {
 .team__list {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
     
     
-     
+    
+    & .team__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 }
 
-@media screen and (min-width: 1200px) {
-    .team__list {
-        display: flex;
-        justify-content: center;
-        
-        
-        
-        & .team__item:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
-    }
 
-// .team  {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//     background-color: var(--secondary-background);
-// }
 
-// .team__list {
-
-//     display: flex;
-//     justify-content: center;
-//     & .team__item:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
 
  .member-title{
      margin-bottom: 10px;
@@ -72,13 +71,26 @@
          margin-bottom: 16px;
          }
       }
-      @media screen and (max-width: 1199px) {
-          .team__item {
-          margin-bottom: 30px; }
-      }
+      
+      
  .employee {
      padding-left: 32px;
      padding-right: 32px;
      padding-top: 30px;
      padding-bottom: 30px;
  }
+
+// @media screen and (max-width: 1199px) {
+//     .team__list {
+//     display: flex;
+                
+//     justify-content: space-between;
+//     flex-wrap: wrap; }
+//     .team__item:nth-child(-n +2) {
+//     margin-bottom: 30px; }
+                
+//     .team__item:nth-child(2n+1) {
+//     margin-right: 30px;
+//      }
+                
+//      }  

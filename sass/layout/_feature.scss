@@ -1,6 +1,15 @@
 .feature {
     padding-top: 60px;
-    padding-bottom: 60px;
+    
+}
+
+@media screen and (max-width: 767px){
+    .feature {
+        padding-bottom: 60px;
+    }
+    .feature__items:not(:last-child) {
+        margin-bottom: 30px;
+         }
 }
 @media screen and (min-width: 768px) {
     .feature {
@@ -12,7 +21,7 @@
 @media screen and (min-width: 1200px) {
     .feature {
         padding-top: 94px;
-        padding-bottom: 94px; 
+     
     }
 }
 
@@ -25,11 +34,11 @@
        & .feature__items {
    
    
-        flex-basis: calc((100% - 30px) / 2);
+         flex-basis: calc((100% - 30px) / 2);
        
     
-    & .feature__items:not(:last-child) {
-        margin-right: 30px;
+    & .feature__items:nth-child(-n +2) {
+        margin-bottom: 30px;
          }
       }
 }

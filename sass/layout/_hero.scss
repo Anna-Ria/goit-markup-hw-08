@@ -2,7 +2,7 @@
     background-color:  #C4C4C4;
      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-     url(../image/img.head1xmob.jpg);
+     url(../image/img-head@1x-mob.jpg);
     max-width: 1600px;
     max-height: 400px;
     padding-top: 118px;
@@ -34,7 +34,7 @@
     
      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
-     url(../image/img.head2xmob.jpg);
+     url(../image/img-head@2x-mob.jpg);
 
    }
  }
@@ -54,7 +54,7 @@
  @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url(../image/img.head1xtab.jpg);
+    rgba(47, 48, 58, 0.4)), url(../image/img-head@1x-tab.jpg);
   }
 }
 
@@ -65,7 +65,7 @@
     
      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
-     url(../image/img.head2xtab.jpg);
+     url(../image/img-head@2x-tab.jpg);
 
    }
   }
@@ -76,7 +76,7 @@
       padding-top: 200px;
       padding-bottom: 200px;
       background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../image/img.head.jpg);
+      rgba(47, 48, 58, 0.4)), url(../image/img-head.jpg);
     }
 
   }
@@ -86,9 +86,18 @@
     (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../image/img.head2x.jpg);
+      rgba(47, 48, 58, 0.4)), url(../image/img-head@2x.jpg);
+      &__title {
+        width: 696px;
+        height: 120px;
+        margin: 0 auto 30px auto;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      text-transform: uppercase;
     }
   }
 
-
+    }
   
