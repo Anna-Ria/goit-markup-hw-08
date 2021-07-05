@@ -685,6 +685,9 @@ body {
   .mobile-menu__link-nav:hover, .mobile-menu__link-nav:focus {
     color: #2196F3;
   }
+  .mobile-menu__item-nav .active {
+    color: var(--accent-color);
+  }
   .contacts-menu__list {
     margin-bottom: 64px;
   }

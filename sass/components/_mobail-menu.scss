@@ -71,7 +71,9 @@ z-index: 1;
     
 }
 
-
+.mobile-menu__item-nav .active {
+    color: var(--accent-color);
+}
 .contacts-menu__list {
     margin-bottom: 64px;
 }
