@@ -14,16 +14,21 @@
     letter-spacing: 0.06em;
    
     }
+    @media screen and (max-width: 767px){
+       .portfolio__item {
+       margin-bottom: 30px; 
+    }
+    }
 
     @media screen and (max-width: 1199px) {
-        .portfolio-section {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-        .portfolio__item {
-            display: list-item;
-          margin-top: 30px;  
-        }
+         .portfolio-section {
+             padding-top: 60px;
+             padding-bottom: 60px;
+         }
+        //  .portfolio__item {
+        //      display: list-item;
+        //     margin-top: 30px;  
+        //  }
         
 
     }
@@ -45,6 +50,7 @@
     // }
 
      @media screen and (min-width: 768px) {
+        
         .portfolio {
             display: flex;
             flex-wrap: wrap;

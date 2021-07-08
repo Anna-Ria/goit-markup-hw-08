@@ -30,13 +30,15 @@
 //       justify-content: center;
 //  }
 // }
-@media screen and (min-width: 260px) {
+@media screen and (min-width: 260px) and (max-width:767px) {
   .filters-button {
-    margin-left: -8px;
-    margin-top: -15px;
+    // margin-left: -8px;
+    // margin-top: -15px;
+    margin-bottom: 40px;
   }
   .portfolio-button {
     margin-left: 8px;
+    
     margin-top: 15px;
   }
 }
@@ -44,17 +46,31 @@
     display: flex;
     flex-wrap: wrap;
    
-    
+}
+
     
     @media screen and (min-width: 768px) {
-      
+     .portfolio-button { 
     justify-content: center;
     margin-bottom: 30px;
+  }
+    .portfolio-button:not(:last-child) {
+margin-right: 8px;
     }
+    .filters-button {
+      justify-content: center;
+    }
+   
+  }
     @media screen and (min-width: 1200px) {
+      .portfolio-button {
      margin-right: 8px;
     margin-bottom: 50px;
-    
+  
+    }
+    .filters-button {
+      justify-content: center;
+    }
     }
 //   @media screen and (max-width: 1199px) {
 //   .portfolio-button:not(:last-child){
@@ -65,7 +81,7 @@
 //     }
 //   }
   
- }
+ 
 
 
 //  .portfolio-button:not(:last-child) {
