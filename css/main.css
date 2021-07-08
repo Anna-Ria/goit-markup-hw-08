@@ -1055,7 +1055,11 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__title {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  __title {
     width: 696px;
     margin-left: auto;
     margin-right: auto;
@@ -1064,6 +1068,7 @@ body {
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
+    letter-spacing: 0.06;
     text-transform: uppercase;
   }
 }
