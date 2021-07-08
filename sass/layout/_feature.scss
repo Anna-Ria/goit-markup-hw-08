@@ -3,7 +3,7 @@
     
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 280px){
     .feature {
         padding-bottom: 60px;
     }
@@ -11,85 +11,62 @@
         margin-bottom: 30px;
          }
 }
-@media screen and (min-width: 768px) {
-    .feature {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-}
-    
-@media screen and (min-width: 1200px) {
-    .feature {
-        padding-top: 94px;
-     
-    }
-}
 
 @media screen and (min-width: 768px) {
     .feature__list {
     
         display: flex;
-        justify-content: space-between; 
+     justify-content: space-between; 
        flex-wrap: wrap;
-       & .feature__items {
-   
-   
-         flex-basis: calc((100% - 30px) / 2);
        
     
-    & .feature__items:nth-child(-n +2) {
-        margin-bottom: 30px;
-         }
+        .feature__items {
+   
+         flex-basis: calc((100% - 30px) / 2);
+         
+    &:nth-child(-n +2) {
+         margin-bottom: 30px;
+          }
       }
 }
 
+
 @media screen and (min-width: 1200px) {
+    .feature {
+        padding-top: 94px;
+     
+    }
+    .feature__list {
     
-.feature__list {
-    
-          display: flex;
-         justify-content: space-between; 
+     display: flex;
+     justify-content: space-between; 
          & .feature__items {
-   
-   
-                    flex-basis: calc((100% - 90px) / 4);
+             flex-basis: calc((100% - 90px) / 4);
          }
-                & .feature__items:not(:last-child) {
-                    margin-right: 30px;
-                     }
-                    }
-                }
-            }
-    //      & .feature__items {
-       
-       
-    //         flex-basis: calc((100% - 90px) / 4);
-        
-    //     & .feature__items:not(:last-child) {
-    //         margin-right: 30px;
+          & .feature__items:not(:last-child) {
+         margin-right: 30px;
+         }
+      }
+     }
+                    
+
+
+
+// @media screen and (min-width: 1200px) {
+    
+// .feature__list {
+    
+//           display: flex;
+//          justify-content: space-between; 
+//          & .feature__items {
+   
+   
+//                     flex-basis: calc((100% - 90px) / 4);
+//          }
+//                 & .feature__items:not(:last-child) {
+//                     margin-right: 30px;
+//                      }
+//                     }
+//                 }
             
-    //         }
-    // }
-    
-    // }
-
-//  .feature {
-//     padding-top: 94px;
-    
-// }
-//  .feature__list {
-    
-//      display: flex;
-//      justify-content: space-between;
-//      & .feature__items {
-   
-   
-//         flex-basis: calc((100% - 90px) / 4);
-    
-//     & .feature__items:not(:last-child) {
-//         margin-right: 30px;
-        
-//         }
-// }
-
-// }
+}             

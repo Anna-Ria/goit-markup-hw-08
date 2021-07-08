@@ -15,8 +15,11 @@
    
     }
 
-    @media screen and (min-width: 280px) {
-       
+    @media screen and (max-width: 1199px) {
+        .portfolio-section {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
         .portfolio__item {
             display: list-item;
           margin-top: 30px;  
